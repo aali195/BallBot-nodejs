@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aali195/BallBot/issues"
   },
-  "homepage": "https://github.com/aali195/BallBot#readme"
+  "homepage": "https://github.com/aali195/BallBot#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
 }
