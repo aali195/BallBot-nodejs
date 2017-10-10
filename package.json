@@ -1,0 +1,19 @@
+{
+  "name": "ballbot",
+  "version": "0.0.1",
+  "description": "First attempt at building a discord bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aali195/BallBot.git"
+  },
+  "author": "Ball",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aali195/BallBot/issues"
+  },
+  "homepage": "https://github.com/aali195/BallBot#readme"
+}
