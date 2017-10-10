@@ -1,0 +1,9 @@
+# Bot config
+config.json
+
+# Dolphin hidden file
+.directory
+
+# Dependencies
+node_modules
+package-lock.json
