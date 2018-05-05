@@ -1,6 +1,6 @@
 {
   "name": "ballbot",
-  "version": "0.0.2",
+  "version": "0.5",
   "description": "An attempt at building a discord bot",
   "main": "app.js",
   "scripts": {
