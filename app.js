@@ -42,6 +42,8 @@ client.on('ready', async () => {
     } catch(e) {
         console.log(e.stack);
     }
+    
+    client.user.setActivity(`${prefix}help`, {type: 'PLAYING'});
 });
 
 client.on('message', async (message) => {
