@@ -7,7 +7,6 @@ module.exports.run = async (client, message, args) => {
     // Args are then passed into the Google search URL
     .addField('Look it up yourself next time.', '[' + args.toString().replace(/,/g, ' ') + '](https://www.google.com/search?q=' + args.toString().replace(/,/g, '+') + ')')
     message.channel.send({embed});
-    return;
 }
 
 module.exports.help = {

@@ -13,7 +13,6 @@ module.exports.run = async (client, message, args) => {
     .addField(prefix + 'google', 'Searches a line of text on Google.')
     .addField(prefix + 'booru', 'Returns a random SFW image from Danbooru with the specified tags.')
     message.channel.send({embed});
-    return;
 }
 
 module.exports.help = {

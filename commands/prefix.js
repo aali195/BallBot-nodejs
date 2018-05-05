@@ -7,7 +7,6 @@ module.exports.run = async (client, message, args) => {
     // Write to config file
     fs.writeFile('./config.json', JSON.stringify(config), (err) => console.error);
     message.channel.send('Prefix has been updated and will be used after the bot restarts.');
-    return;
 }
 
 module.exports.help = {

@@ -15,10 +15,7 @@ fs.readdir('./commands/', (err, files) => {
     // Creates an array for the command files and filters for ones that end in 'js'
     let jsfiles = files.filter(f => f.split('.').pop() === 'js');
     // Checks for the length of the created array of commands
-    if (jsfiles.length <= 0) {
-        console.log('No command files found.');
-        return;
-    }
+    if (jsfiles.length <= 0) return console.log('No command files found.');
     
     console.log(`Loading ${jsfiles.length} commands`);
     
@@ -60,8 +57,6 @@ client.on('message', async (message) => {
     // Sets the command to a variable and runs it if it is found
     let cmd = client.commands.get(command);
     if (cmd) cmd.run(client, message, args);
-    
-    return;
 });
 
 client.login(config.token);
