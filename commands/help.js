@@ -11,6 +11,7 @@ module.exports.run = async (client, message, args) => {
     .addField(prefix + 'ping', 'Prints \"Pong!\" as well as the latency.')
     .addField(prefix + 'help', 'Prints this embeded help message.')
     .addField(prefix + 'google', 'Searches a line of text on Google.')
+    .addField(prefix + 'booru', 'Returns a random SFW image from Danbooru with the specified tags.')
     message.channel.send({embed});
     return;
 }
