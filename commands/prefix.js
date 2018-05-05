@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 module.exports.run = async (client, message, args) => {
-    if (message.author.id != config.ownerId) return;
+    if (message.author.id !== config.ownerId) return;
     // Requires restarting the bot for now
     config.prefix = args[0];
     // Write to config file

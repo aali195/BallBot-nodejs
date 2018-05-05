@@ -50,7 +50,7 @@ client.on('message', async (message) => {
     // Ignore messages not starting with the prefix or if the author is a bot
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     // Ignore if the message is a DM and is not sent by the owner
-    if (message.channel.type === 'DM' && (message.author.id != config.ownerId)) return;
+    if (message.channel.type === 'DM' && (message.author.id !== config.ownerId)) return;
     
     // Parse the message by slicing the prefix, triming the extra spaces and then splitting by space regex
     let args = message.content.slice(prefix.length).trim().split(/ +/g);
